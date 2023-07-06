@@ -1,0 +1,54 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="header">
+                <h1 class="title">Jimmy’s Diner</h1>
+                <p class="sub-title">The best burgers and pizzas in town.</p>
+            </div>
+            <div class="menu" id="menu">
+                <!-- MENU -->
+            </div>
+            <div class="order-section hidden" id="order-section">
+                <!-- Order Section -->
+                <h2 class="your-orders">Your Orders</h2>
+                <div class="orders">
+                    <div class="order" id="order">
+                        <!-- ORDER -->
+                    </div>
+                </div>
+                <div class="price-and-btn">
+                    <div class="total-price">
+                        <p class="name">Total price:</p>
+                        <p class="price" id="total-price"></p>
+                    </div>
+                    <button class="btn" id="complete-btn">Complete Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-inner">
+                <h2 class="modal-title">Enter card details</h2>
+                <form id="consent-form">
+                    <input type="text" name="fullName" placeholder="Enter your name" required>
+                    <input type="text" name="cardNumber" placeholder="Enter card number" required>
+                    <input type="text" name="cvv" placeholder="Enter CVV" required>
+                    <button class="btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+            <!-- MODAL -->
+        </div>
+        <div class="thank-you-msg-container">
+            <p class="thank-you-msg" id="thank-you-msg"></p>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
