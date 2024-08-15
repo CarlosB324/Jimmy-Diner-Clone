@@ -14,9 +14,6 @@ document.addEventListener('click', function(e){
     else if(e.target.id === 'complete-btn') {
         handleCompleteBtnClick()
     }
-    // else if(e.target.id === 'pay-btn') {
-    //     handlePayBtnClick()
-    // }
 })
 
 
@@ -95,21 +92,6 @@ function handleCompleteBtnClick() {
     document.getElementById('container').style.filter = 'brightness(50%)'
 }
 
-// MODAL
-// function handlePayBtnClick(e) {
-//     e.defaultPrevented()
-//     document.getElementById('container').style.filter = 'none'
-//     renderThankYou()
-//     localStorage.clear()
-// }
-
-// function  getThankYouMsg() {
-//     let thankYou = ``
-//     const consentFormData = new FormData(consentForm)
-//     const fullName = consentFormData.get('fullName')
-//     thankYou = `Thanks, ${fullName}! Your order is on its way!`
-// }
-
 consentForm.addEventListener('submit', function(e){
     e.preventDefault()
     let thankYou = ``
@@ -140,59 +122,4 @@ function renderOrder() {
     document.getElementById('total-price').innerHTML = '$' + getTotalPrice()
 }
 
-// function renderThankYou() {
-//     document.getElementById('thank-you-msg').innerHTML = getThankYouMsg()
-// }
-
 renderMenu()
-
-
-
-
-
-
-
-
-
-
-
-
-
-// MENU
-// <div class="items">
-//     <h2 class="emoji">🍕</h2>
-//      <div class="item-info">
-//         <p class="name">Pizza</p>
-//         <p class="ingredients">pepperoni,mushrom,mozarella</p>
-//         <p class="price">$14</p>
-//     </div>
-//     <i class="fa-regular fa-plus plus-icon"></i>
-// </div>
-
-
-
-// ORDER SECTION
-// <h2 class="your-orders">Your Orders</h2>
-// <div class="orders">
-//     <div class="order">
-//         <div class="order-name">
-//             <p class="name">Pizza</p>
-//             <p class="remove-btn" id="remove-btn" data-remove-btn="">REMOVE</p>
-//         </div>
-//         <p class="price">$14</p>
-//     </div>
-// </div>
-// <div class="price-and-btn">
-//     <div class="total-price">
-//         <p class="name">Total price:</p>
-//         <p class="price">$14</p>
-//     </div>
-//      <button class="complete-btn">Complete Order</button>
-// </div>
-
-// ORDER 
-// <div class="order-name">
-//     <p class="name">Pizza</p>
-//     <p class="remove-btn" id="remove-btn" data-remove-btn="">REMOVE</p>
-// </div>
-// <p class="price">$14</p>
